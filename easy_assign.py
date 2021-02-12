@@ -15,20 +15,36 @@ DO NOT EDIT THE FUNCTION NAMES.
 '''
 
 def append_two_strings(string_1, string_2):
-
-    pass
+    result = string_1 + string_2
+    return result 
 
 
 def append_character(string_1, char_1):
+    result = string_1 + char_1
+    return result 
 
-    pass
 
 
 def append_num_to_string(string_1, num_1):
+    result = string_1 + str(num_1)
+    return result 
 
-    pass
 
 
 if __name__ == "__main__":
+    string_1 = str(input("assign string_1: "))
+    string_2 = str(input("assign string_2: "))
+    value = append_two_strings(string_1, string_2)
+    print(value)
     
-    pass
+    string_1 = str(input("assign string_1: "))
+    char_1 = str(input("assign char_1: "))
+    if len(char_1) > 1:
+        print("Error! Only 1 character allowed!")
+    value_2 = append_character(string_1, char_1)
+    print(value_2)
+
+    string_1 = str(input("assign string_1: "))
+    num_1 = int(input("assign num_1: "))
+    value_3 = append_num_to_string(string_1, num_1)
+    print(value_3)
